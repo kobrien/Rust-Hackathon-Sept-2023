@@ -14,9 +14,12 @@ name = "tard_fi_data"
 [dependencies]
 actix-web = "4"
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
-serde = { version = "1", features = ["derive"]}
+serde = { version = "1", features = ["derive"] }
 env_logger = "0.9"
 log = "0.4"
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.4.1", features = ["serde", "v4"] }
+serde_json = "1.0.107"
 
 
 [dependencies.sqlx]
